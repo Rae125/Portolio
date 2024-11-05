@@ -1,0 +1,393 @@
+/* Gecombineerde CSS van alle blokken */
+
+@import url('https://fonts.googleapis.com/css2?family=Helvetica:wght@700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: white;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+    overflow-x: hidden; /* Voorkom horizontale sliders */
+}
+
+.container, .container2, .container3, .container4 {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 100vh;
+}
+
+#cursor-ring {
+    --circle-size: 35px;
+      position: fixed;
+      height: var(--circle-size);
+      width: var(--circle-size);
+      border: 1px solid white;
+      border-radius: 100%;
+      top: calc(var(--circle-size) / 2 * -1);
+      left: calc(var(--circle-size) / 2 * -1);
+      pointer-events: none;
+      z-index: 10;
+    }
+
+
+
+
+
+.container3 {
+    height: 290vh; 
+
+}
+
+.block {
+    background-color: #1a1a1a;
+    padding: 40px;
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+    overflow-y: auto;
+}
+
+h1, .more-projects-title {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 30px;
+    line-height: 1.5;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+/* Styling voor de link */
+.project-link {
+    text-decoration: none;
+    color: inherit; /* Zorgt ervoor dat tekstkleur niet verandert bij hover */
+    cursor: default;
+}
+
+.placeholder {
+    width: 100%;
+    height: 70px;
+    background-color: #d8d8d8;
+    border-radius: 8px;
+}
+
+.top-left {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    font-size: 24px;
+}
+
+.top-right {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 20px;
+}
+
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    font-size: 28px;
+    line-height: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.center p {
+    margin: 0;
+}
+
+.center .left {
+    text-align: left;
+}
+
+.center .right {
+    text-align: right;
+    position: absolute;
+    right: 0;
+}
+
+.bottom-line {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+    position: relative;
+}
+
+.my-projects {
+    width: 786px;
+    height: auto;
+    position: absolute;
+    left: 92px;
+    top: 184.97px;
+    font-size: 128px;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+.top-left-photo, .bottom-right-photo, .top-right-photo, .bottom-left-photo {
+    position: absolute;
+}
+
+.top-left-photo {
+    width: 900px; /* Gebruik dezelfde breedte als de andere placeholders voor consistentie */
+    height: 630px; /* Gebruik dezelfde hoogte als de andere placeholders voor consistentie */
+    left: 71px;
+    top: 521.91px;
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Zorgt ervoor dat de afbeelding de container vult zonder vervorming */
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.bottom-right-photo {
+    width: 855px;
+    left: 960px;
+    
+    height: auto;
+    top: 1432.76px;
+}
+
+
+
+.top-right-photo {
+    width: 630px;
+    height: auto;
+    left: 1185px;
+    top: 184.97px;
+}
+
+.bottom-left-photo {
+    width: 702px;
+    height: auto;
+    left: 97px;
+    top: 1787.70px;
+}
+
+
+.title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 3px;
+}
+
+.title, .project-title {
+    font-size: 1.5vw;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+.what-i-did-date, .project-date {
+    font-size: 1vw;
+    font-weight: 400;
+    word-wrap: break-word;
+    color: #BFBFBF;
+}
+
+.underline-date-etc, .line-under-date-etc, .line-under-time-date-etc {
+    background: #BFBFBF;
+    width: 100%;
+    height: 1px;
+    margin-top: 5px;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.project {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 15px;
+    width: calc(50% - 40px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.project-img {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.project-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.project-info .left {
+    text-align: left;
+}
+
+.project-info .right {
+    text-align: right;
+}
+
+.project-description {
+    font-size: 18px;
+    color: #BFBFBF;
+}
+
+/* Blok 5: More of my Projects - Blok 5: More of my Projects - Blok 5: More of my Projects   */
+
+.project-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project-card {
+    position: relative;
+    border-radius: 10px;
+    background-color: #333;
+    overflow: hidden;
+}
+
+.project-thumbnail {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(50%);
+}
+
+.project-details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 20px;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
+}
+
+.project-description {
+    text-align: left;
+}
+
+.project-date {
+    text-align: right;
+}
+
+.project-details h2 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.project-details p {
+    margin: 0;
+    color: #ccc;
+}
+
+.project-date p {
+    font-size: 1em;
+    color: #fff;
+}
+
+
+
+/* Main footer container styling */
+.footer {
+    position: fixed; /* Houd de footer vast onderaan het scherm */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 180px;
+   
+    z-index: 1000; /* Zorg ervoor dat de footer altijd boven andere elementen ligt */
+}
+
+
+/* Main footer container styling */
+.footer {
+    position: relative;
+    width: 100%;
+    height: 170px;
+    margin-top: 20px; /* Optioneel, voor ruimte tussen content en footer */
+}
+
+/* Copyright text centered at the bottom */
+.mia {
+    position: absolute;
+    left: 50%;
+    top: 134px;
+    transform: translateX(-50%); /* Centers the text horizontally */
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* Links container styling */
+.links {
+    position: relative; /* Zorg ervoor dat de container zich in de footer bevindt */
+    width: 100%;
+    height: 64px;
+    top: 21px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Styling for each link within the footer */
+.netherlands, .x, .instagram, .linkedin {
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* Topline element for a decorative line at the top of the footer */
+.topline {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 0;
+    background: #D9D9D9;
+}
+
